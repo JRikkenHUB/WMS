@@ -1,0 +1,11 @@
+D:\github repository\WMS\src\main\java\nl\werkwent\Service\DTO\KlantDTO.java
+D:\github repository\WMS\src\main\java\nl\werkwent\Persistence\IWorkorderDOA.java
+D:\github repository\WMS\src\main\java\nl\werkwent\Service\IWorkorderService.java
+D:\github repository\WMS\src\main\java\nl\werkwent\Persistence\WorkorderDOA.java
+D:\github repository\WMS\src\main\java\nl\werkwent\Resource\WorkorderResource.java
+D:\github repository\WMS\src\main\java\nl\werkwent\Persistence\ConnectionFactory.java
+D:\github repository\WMS\src\main\java\nl\werkwent\Persistence\IConnectionFactory.java
+D:\github repository\WMS\src\main\java\nl\werkwent\Service\WorkorderService.java
+D:\github repository\WMS\src\main\java\nl\werkwent\Service\DTO\ProductDTO.java
+D:\github repository\WMS\src\main\java\nl\werkwent\Persistence\DatabaseProperties.java
+D:\github repository\WMS\src\main\java\nl\werkwent\Service\DTO\WorkorderDTO.java
