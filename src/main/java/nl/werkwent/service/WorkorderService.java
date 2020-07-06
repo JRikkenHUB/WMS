@@ -1,7 +1,7 @@
-package nl.werkwent.Service;
+package nl.werkwent.service;
 
-import nl.werkwent.DTO.WorkorderDTO;
-import nl.werkwent.Persistence.IWorkorderDOA;
+import nl.werkwent.service.dto.WorkorderDTO;
+import nl.werkwent.persistence.IWorkorderDOA;
 
 import javax.inject.Inject;
 

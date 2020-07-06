@@ -1,0 +1,11 @@
+nl\werkwent\Persistence\IWorkorderDOA.class
+nl\werkwent\Resource\WorkorderResource.class
+nl\werkwent\Persistence\DatabaseProperties.class
+nl\werkwent\Persistence\ConnectionFactory.class
+nl\werkwent\Service\DTO\KlantDTO.class
+nl\werkwent\Persistence\IConnectionFactory.class
+nl\werkwent\Service\IWorkorderService.class
+nl\werkwent\Service\DTO\WorkorderDTO.class
+nl\werkwent\Service\WorkorderService.class
+nl\werkwent\Persistence\WorkorderDOA.class
+nl\werkwent\Service\DTO\ProductDTO.class

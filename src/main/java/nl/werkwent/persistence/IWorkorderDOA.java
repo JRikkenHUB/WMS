@@ -1,6 +1,6 @@
-package nl.werkwent.Persistence;
+package nl.werkwent.persistence;
 
-import nl.werkwent.DTO.WorkorderDTO;
+import nl.werkwent.service.dto.WorkorderDTO;
 
 public interface IWorkorderDOA {
     void CreateNewWorkorder(WorkorderDTO workorderDTO);

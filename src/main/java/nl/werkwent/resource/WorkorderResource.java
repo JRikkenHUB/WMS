@@ -1,7 +1,7 @@
-package nl.werkwent.Resource;
+package nl.werkwent.resource;
 
-import nl.werkwent.DTO.WorkorderDTO;
-import nl.werkwent.Service.IWorkorderService;
+import nl.werkwent.service.dto.WorkorderDTO;
+import nl.werkwent.service.IWorkorderService;
 
 import javax.inject.Inject;
 import javax.ws.rs.Consumes;

@@ -1,4 +1,4 @@
-package nl.werkwent.Persistence;
+package nl.werkwent.persistence;
 
 import java.util.Properties;
 

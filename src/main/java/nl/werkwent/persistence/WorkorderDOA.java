@@ -1,7 +1,8 @@
-package nl.werkwent.Persistence;
+package nl.werkwent.persistence;
 
-import nl.werkwent.DTO.ProductDTO;
-import nl.werkwent.DTO.WorkorderDTO;
+import nl.werkwent.service.dto.ProductDTO;
+import nl.werkwent.service.dto.WorkorderDTO;
+import nl.werkwent.service.exceptions.databaseRequestFailedException;
 
 import java.sql.Connection;
 import java.sql.Date;
@@ -56,8 +57,7 @@ public class WorkorderDOA implements IWorkorderDOA {
 
 
         } catch (SQLException e) {
-            //TODO replace with custom error
-            e.printStackTrace();
+            throw new databaseRequestFailedException();
         }
     }
 }
