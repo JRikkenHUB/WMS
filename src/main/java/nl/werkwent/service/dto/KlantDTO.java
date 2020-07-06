@@ -1,4 +1,4 @@
-package nl.werkwent.DTO;
+package nl.werkwent.service.dto;
 
 public class KlantDTO {
     private String naam;

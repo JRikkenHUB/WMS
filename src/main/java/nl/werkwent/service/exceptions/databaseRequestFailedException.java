@@ -1,4 +1,4 @@
 package nl.werkwent.service.exceptions;
 
-public class databaseRequestFailedException {
+public class databaseRequestFailedException extends RuntimeException {
 }

@@ -1,4 +1,4 @@
-package nl.werkwent.DTO;
+package nl.werkwent.service.dto;
 
 import java.util.Date;
 import java.util.List;
