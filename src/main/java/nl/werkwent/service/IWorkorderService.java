@@ -4,4 +4,7 @@ import nl.werkwent.service.dto.WorkorderDTO;
 
 public interface IWorkorderService {
     void CreateNewWorkorder(WorkorderDTO workorderDTO);
+
+    WorkorderDTO getWorkorder(String id);
+
 }

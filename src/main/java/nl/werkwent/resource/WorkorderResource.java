@@ -4,9 +4,7 @@ import nl.werkwent.service.dto.WorkorderDTO;
 import nl.werkwent.service.IWorkorderService;
 
 import javax.inject.Inject;
-import javax.ws.rs.Consumes;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
@@ -21,5 +19,12 @@ public class WorkorderResource {
     public Response CreateNewWorkOrder(WorkorderDTO workorderDTO){
         workorderService.CreateNewWorkorder(workorderDTO);
         return Response.status(Response.Status.OK).build();
+    }
+
+    @Path("/get/{id}")
+    @GET
+    @Produces
+    public Response getWorkorder(@PathParam("id") String id){
+        return Response.ok().entity(workorderService.getWorkorder(id)).build();
     }
 }
