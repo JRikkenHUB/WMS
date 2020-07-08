@@ -6,7 +6,7 @@ import java.util.List;
 public class WorkorderDTO {
     private String workorderNummer;
     private String bestelNummer;
-    private KlantDTO klant;
+    private CustomerDTO klant;
     private Date ontvangstDatum;
     private Date leverDatum;
     private Date verzendDatum;
@@ -14,7 +14,12 @@ public class WorkorderDTO {
     private Date productieEinde;
     private List<ProductDTO> producten;
 
-    public WorkorderDTO(String workorderNummer, String bestelNummer, KlantDTO klant, Date ontvangstDatum, Date leverDatum, Date verzendDatum, Date productieStart, Date productieEinde, List<ProductDTO> producten) {
+    //TODO add state to database and DTO
+
+    public WorkorderDTO() {
+    }
+
+    public WorkorderDTO(String workorderNummer, String bestelNummer, CustomerDTO klant, Date ontvangstDatum, Date leverDatum, Date verzendDatum, Date productieStart, Date productieEinde, List<ProductDTO> producten) {
         this.workorderNummer = workorderNummer;
         this.bestelNummer = bestelNummer;
         this.klant = klant;
@@ -24,6 +29,17 @@ public class WorkorderDTO {
         this.productieStart = productieStart;
         this.productieEinde = productieEinde;
         this.producten = producten;
+    }
+
+    public WorkorderDTO(String workorderNummer, String bestelNummer, CustomerDTO klant, Date ontvangstDatum, Date leverDatum, Date verzendDatum, Date productieStart, Date productieEinde) {
+        this.workorderNummer = workorderNummer;
+        this.bestelNummer = bestelNummer;
+        this.klant = klant;
+        this.ontvangstDatum = ontvangstDatum;
+        this.leverDatum = leverDatum;
+        this.verzendDatum = verzendDatum;
+        this.productieStart = productieStart;
+        this.productieEinde = productieEinde;
     }
 
     public String getWorkorderNummer() {
@@ -42,11 +58,11 @@ public class WorkorderDTO {
         this.bestelNummer = bestelNummer;
     }
 
-    public KlantDTO getKlant() {
+    public CustomerDTO getKlant() {
         return klant;
     }
 
-    public void setKlant(KlantDTO klant) {
+    public void setKlant(CustomerDTO klant) {
         this.klant = klant;
     }
 
@@ -97,4 +113,5 @@ public class WorkorderDTO {
     public void setProducten(List<ProductDTO> producten) {
         this.producten = producten;
     }
+
 }

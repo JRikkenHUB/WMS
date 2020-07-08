@@ -1,6 +1,6 @@
 package nl.werkwent.service.dto;
 
-public class KlantDTO {
+public class CustomerDTO {
     private String naam;
     private String adres;
     private String postcode;
@@ -9,7 +9,10 @@ public class KlantDTO {
     private String ontvangstPostcode;
     private String ontvangstPlaatsnaam;
 
-    public KlantDTO(String naam, String adres, String postcode, String plaatsnaam, String ontvangstAdres, String ontvangstPostcode, String ontvangstPlaatsnaam) {
+    public CustomerDTO() {
+    }
+
+    public CustomerDTO(String naam, String adres, String postcode, String plaatsnaam, String ontvangstAdres, String ontvangstPostcode, String ontvangstPlaatsnaam) {
         this.naam = naam;
         this.adres = adres;
         this.postcode = postcode;
