@@ -7,4 +7,5 @@ public interface IWorkorderService {
 
     WorkorderDTO getWorkorder(String id);
 
+    void printWorkorder(String id);
 }

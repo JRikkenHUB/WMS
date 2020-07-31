@@ -27,4 +27,12 @@ public class WorkorderResource {
     public Response getWorkorder(@PathParam("id") String id){
         return Response.ok().entity(workorderService.getWorkorder(id)).build();
     }
+
+    @Path("/get/{id}")
+    @PUT
+    @Produces
+    public Response printWorkorder(@PathParam("id") String id){
+        workorderService.printWorkorder(id);
+        return Response.ok().build();
+    }
 }

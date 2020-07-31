@@ -103,6 +103,16 @@ public class WorkorderDOA implements IWorkorderDOA {
 
     }
 
+    @Override
+    public void updateWorkorderState(String id, int state) {
+        try(Connection connection = connectionFactory.getConnection()){
+            PreparedStatement updateState = connection.prepareStatement("");
+
+        } catch (SQLException e) {
+            throw new databaseRequestFailedException();
+        }
+    }
+
     public WorkorderDTO workorderDTOFromResultSet(ResultSet workorderInfo, ResultSet customerInfo, ResultSet productInfo){
         WorkorderDTO workorderDTO = new WorkorderDTO();
         CustomerDTO customerDTO = new CustomerDTO();
